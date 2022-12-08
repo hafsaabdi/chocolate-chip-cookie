@@ -1,15 +1,15 @@
 //Global Variable
-int appWidth, appHeight,largerDimension,smallerDimension;
+int appWidth=1, appHeight=1,largerDimension,smallerDimension;
 //
 void setup() {
-  size(1500,4000);
+  size(600,400);
   //fullscreen();//displayWidth, displayHeight
-  //Display Algorithm from Hello Worlds
-  display();
   appWidth= width;
   appHeight= height;
-  largerDimension=appWidth;// From Display Algorithm
-  smallerDimension=appHeight;//Display Algorithm
+  //Display Algorithm from Hello Worlds
+  display();
+  //smaller & larger dimension from Display Algorithm
+  println("Smaller Dimension is",smallerDimension,"Larger Dimension is",largerDimension);
 }//End setup
 //
 void draw() {
