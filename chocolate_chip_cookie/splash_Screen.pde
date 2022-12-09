@@ -1,17 +1,17 @@
-int startX, startY, startWidth, startHeight;
+float startX, startY, startWidth, startHeight;
 //
 void splashScreen() {
-  /*Note: any visually-based code running in setup() controlled by MouseClick
-  -backgroud image 
-  */
+  /*Note: any visually-based code running in SetUp() controlled by MouseClick
+   - background image
+   */
   //
-  /*Any other code for Splash Sceen goes below
-  -Start button
-  -any other instruction
-  -Splash screen details
-  */
-  background(255);//testing only
-  rect(startX, startY, startWidth, startHeight);//Start Button Text, testing only
+  /*Any other code for Splash Screen goes below
+   - Start Button
+   - Any other instructions
+   - Splash Screen Details
+   */
+   background(255); //testing only
+   spaceBarText();
 }//End splashScreen
 //
-//End splash Screen Subprogram
+//End Splash Screen Subprogram

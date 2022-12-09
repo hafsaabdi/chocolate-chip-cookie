@@ -12,6 +12,7 @@ void setup() {
   //smaller & larger dimension from Display Algorithm
   println("Smaller Dimension is" ,smallerDimension, "Larger Dimension is" ,largerDimension);
   population();//Values based on DISPLAY
+  textSetup();
 }//End setup
 //
 void draw() {
