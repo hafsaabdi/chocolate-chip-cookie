@@ -8,9 +8,10 @@ void setup() {
   appWidth= width;
   appHeight= height;
   //Display Algorithm from Hello Worlds
-  display();
+  display();//Purpose: CANVAS fits in monitor & dimension size is known
   //smaller & larger dimension from Display Algorithm
   println("Smaller Dimension is" ,smallerDimension, "Larger Dimension is" ,largerDimension);
+  population();//Values based on DISPLAY
 }//End setup
 //
 void draw() {

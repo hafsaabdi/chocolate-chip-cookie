@@ -11,7 +11,7 @@ void splashScreen() {
   -Splash screen details
   */
   background(255);//testing only
-  rect(startX, startY, startWidth, startHeight);//Start Button
+  rect(startX, startY, startWidth, startHeight);//Start Button Text, testing only
 }//End splashScreen
 //
 //End splash Screen Subprogram
