@@ -1,6 +1,6 @@
 //Global Variable
 int appWidth=1, appHeight=1,largerDimension,smallerDimension;
-Boolean OS_On=false;
+Boolean OS_On=false,splashScreenStart=false;
 //
 void setup() {
   size(600,400);
@@ -18,9 +18,12 @@ void setup() {
 void draw() {
   //Asssignment #2: OS LevelMouse Click and Splash Screen
   if (OS_On==true) splashScreen(); //OS Level MOUSE Click
+  if (splashScreenStart == true) homeScreen();
 }//End draw
 //
 void keyPressed() {
+  //Splash screen SPACE  bar
+  if (key==' ') splashScreenStart = true;
 }//End keyPressed
 //
 void mousePressed() {
