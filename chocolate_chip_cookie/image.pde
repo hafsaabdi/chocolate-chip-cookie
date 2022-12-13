@@ -1,7 +1,7 @@
-PImage backgroundImage;
+PImage backgroundimage;
 //
-void imageSetup() {//Image Population
-  backgroundImage=loadImage("../Images/hellish bilizard.jpg ");
+void imageSetup() {//image Population
+  backgroundimage=loadImage("../Images/");
 }//End imageSetup
 //
 //End Image Subprogram
