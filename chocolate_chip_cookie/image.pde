@@ -26,6 +26,7 @@ void quitButtonImage() {
     imageHeightRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
     quitButtonImageHeight_Calculated = imageHeightRatio * quitButtonImageRectWidth;
    //
+   //Debugging:x-value must be centered
    image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated );
     //
     //
