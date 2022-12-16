@@ -19,10 +19,23 @@ void homeScreen() { //Exists in VOID DRAW
 //
 //Quit Button, move to Button Subprogram
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
+    /*
     fill(white); //Testing Only
     rect( quitX, quitY, quitWidth, quitHeight ); //Testing Only
     noFill(); //Testing Only
+    */
+    noStroke();
+    fill(white);
+    rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
+    noFill();
+    stroke(1); //reset dedault
+    quitButtonImage(); //In Aspect Ratio
   } else { 
+    noStroke();
+    fill(white);
+    rect( quitX, quitY, quitWidth, quitHeight );
+    noFill();
+    stroke(1); //reset dedault
     quitButtonText();
   }
   //rect( quitX, quitY, quitWidth, quitHeight );
