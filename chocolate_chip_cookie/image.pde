@@ -1,7 +1,7 @@
 PImage backgroundImage, quitButtonImage;
 //
 void imageSetup() {//Image Population
-  backgroundImage=loadImage("../Images/thick-chocolate-chip-cookies-recipe-14-scaled.jpg");
+  backgroundImage=loadImage("../images used/thick-chocolate-chip-cookies-recipe-14-scaled.jpg");
   //quitButtonImage is loaded here if different
 }//End imageSetup
 //
@@ -10,7 +10,7 @@ void quitButtonImage() {
   //
   //Image Dimensions
   float quitButtonImageWidth=1707, quitButtonImageHeight=2560;
-  rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
+  //rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
   //Following vars must be populated or debugger error
   float quitButtonImageWidth_Adjusted=0.0, quitButtonImageHeight_Adjusted=0.0;
   float quitButtonImageWidth_Calculated=0.0, quitButtonImageHeight_Calculated=0.0;
@@ -25,10 +25,11 @@ void quitButtonImage() {
     quitButtonImageWidth_Adjusted = quitButtonImageRectWidth;
     imageHeightRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
     quitButtonImageHeight_Calculated = imageHeightRatio * quitButtonImageRectWidth;
-   //
-   //Debugging:x-value must be centered
-   image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated );
     //
+    //Debugging: x-value must be centered
+    float centerX=appWidth*1/2;
+    quitButtonImageRectX = centerX - quitButtonImageWidth_Adjusted * 1/2;
+    image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated );
     //
   } else {//Portrait
     largerDimension = quitButtonImageHeight;
@@ -39,10 +40,12 @@ void quitButtonImage() {
     imageWidthRatio = smallerDimension / largerDimension; //value<1, main point of algorithm
     quitButtonImageWidth_Calculated = imageWidthRatio * quitButtonImageRectHeight;
     //
+    //Debugging: x-value must be centered
+    float centerX=appWidth*1/2;
+    quitButtonImageRectX = centerX - quitButtonImageWidth_Calculated * 1/2;
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Calculated, quitButtonImageHeight_Adjusted );
     //
   }
-  image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY  );
 }//End quitButtonImage
 //
 //End Image Subprogram
